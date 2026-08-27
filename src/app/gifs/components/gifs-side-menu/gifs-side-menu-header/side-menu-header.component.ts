@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../../../environments/environments.development';
 
 
 @Component({
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './side-menu-header.component.html',
 })
-export class SideMenuHeaderComponent { }
+export class SideMenuHeaderComponent { 
+
+  envs = environment;
+}
