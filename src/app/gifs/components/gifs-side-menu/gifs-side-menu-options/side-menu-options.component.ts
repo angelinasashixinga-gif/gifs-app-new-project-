@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 
 interface MenuOption {
@@ -11,7 +12,7 @@ interface MenuOption {
 
 @Component({
   selector: 'gifs-side-menu-options',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './side-menu-options.component.html',
 })
 export class SideMenuOptionsComponent {
@@ -19,7 +20,7 @@ export class SideMenuOptionsComponent {
     {
     icon: 'fa-solid fa-chart-line',
     label: 'Trending',
-    route: '/dashboard/treding',
+    route: '/dashboard/trending',
     sublabel: 'Gifs Popolares',
     },
     {
