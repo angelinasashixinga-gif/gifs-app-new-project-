@@ -24,7 +24,7 @@ export class SideMenuOptionsComponent {
     sublabel: 'Gifs Popolares',
     },
     {
-    icon: 'fa-solid fa-magifying-glass',
+    icon: 'fa-solid fa-magnifying-glass',
     label: 'Buscador',
     route: '/dashboard/search',
     sublabel: 'Buscar gifs',
