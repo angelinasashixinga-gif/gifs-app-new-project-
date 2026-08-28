@@ -1,5 +1,10 @@
 <!-- <p>gif-list work</p> -->
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    @for (gif of gifs(); track gif ){
+        
+    <gif-list-item [imageUrl]="gif" />
+
+    <!-- <gif-list-item />
     <gif-list-item />
     <gif-list-item />
     <gif-list-item />
@@ -9,9 +14,10 @@
     <gif-list-item />
     <gif-list-item />
     <gif-list-item />
-    <gif-list-item />
-    <gif-list-item />
-    <gif-list-item />
+    <gif-list-item /> -->
+    }
+
+
 
 </div>
  
