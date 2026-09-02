@@ -3,6 +3,7 @@ import { inject, Injectable, signal } from "@angular/core";
 import { environment } from "../../../environments/environments.development";
 import type { GiphyResponse } from "../interfaces/giphy.interfaces";
 import { GifMapper } from "../mapper/gif.mapper";
+import { Gif } from "../interfaces/gif.interface";
 
 @Injectable({providedIn: 'root'})
 export class GifService {
