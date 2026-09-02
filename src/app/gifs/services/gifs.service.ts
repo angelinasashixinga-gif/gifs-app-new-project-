@@ -5,7 +5,7 @@ import type { GiphyResponse } from "../interfaces/giphy.interfaces";
 
 @Injectable({providedIn: 'root'})
 export class GifService {
-private http = inject(HttpClient);
+private http = inject(HttpClient)
     
 constructor() {
     this.loadTrendingGifs();
