@@ -8,7 +8,7 @@ export const environment = {
 
     // ApiKeys
 
-    giphyApikey: "OqplLK0p2KU3UqE0g2tQkZ6C7ShD7LGI"
+    giphyApikey: "https://api.giphy.com/v1/gifs/trending?api_key=LikHpvldsig05Ww4UdrzmmsCfmiYZoto&limit=25&offset=0&rating=g&bundle=messaging_non_clips"
 
     // URL
 
