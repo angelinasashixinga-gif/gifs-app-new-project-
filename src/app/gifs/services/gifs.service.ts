@@ -30,7 +30,21 @@ loadTrendingGifs() {
         console.log({ gifs });
 
         });
+    }
+    searchGifs(query: String) {
+          this.http.get<GiphyResponse>(`${environment.giphyUrl}/gifs/search`, {
+        params: {
+            api_key: environment.giphyApikey,
+            limit: 20,
+            q: query,
+        },
+    })
+    .subscribe( (resp) => {
+        const gifs = GifMapper.mapGiphyItemsToGifArray(resp.data);
+        
+        console.log({ search: gifs });
 
+        });
     }
 
 }
