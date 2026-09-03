@@ -32,7 +32,7 @@ loadTrendingGifs() {
 
         });
     }
-    searchGifs(query: String) {
+    searchGifs(query: string) {
           return this.http
           .get<GiphyResponse>(`${environment.giphyUrl}/gifs/search`, {
         params: {
