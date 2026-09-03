@@ -22,6 +22,13 @@ children: [
         import('./gifs/pages/search-page.component/search-page.component'),
 
  },
+  {
+
+    path: 'history/:query',
+    loadComponent: () => 
+        import('./gifs/pages/gif-history/gif-history.component'),
+
+ },
 ]
 
 },
